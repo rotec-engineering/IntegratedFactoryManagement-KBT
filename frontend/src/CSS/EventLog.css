@@ -1,0 +1,16 @@
+.eventTitle {
+  font-size: 35px;
+  text-align: left;
+}
+
+.eventCheck {
+  font-size: 20px;
+  text-align: right;
+}
+
+.eventTable {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+}

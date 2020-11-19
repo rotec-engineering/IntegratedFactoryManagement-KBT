@@ -1,0 +1,29 @@
+.header {
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  background: #8A99A6;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.logoutBtnDiv {
+  text-align: right;
+}
+
+/* .logoutBtn {
+  display: none;
+} */
+
+.customerLogo {
+  text-align: left;
+  /* display: none; */
+}
+
+.title {
+  font-size: 30px;
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  font-family: 'Jua', sans-serif;
+  text-align: center;
+  background-color: #cbdbe9;
+}
+
+table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: 0.5px solid;
+  margin: 1%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+.componentDiv {
+  border: 2px solid;
+  border-radius: 2em;
+  height: 100%;
+}
+
+.overallDiv {
+  border: 2px solid;
+  border-radius: 2em;
+  height: 50%;
+}
+
+.locationDiv {
+  border: 2px solid;
+  border-radius: 2em;
+  height: 47%;
+}
+
+.oneTable {
+  padding: 10%;
+  width: 100%;
+}
+
+.locationTable {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+}
+
+.overallImage {
+  margin: 1%;
+}
+
+.detailStatusImage {
+  margin: 1%;
+}
+
+.SBDDiv {
+  padding: 0%;
+}
