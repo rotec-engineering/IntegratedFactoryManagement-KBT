@@ -7,7 +7,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '언택트 통합 공정 모니터링 시스템',
+      name: '통합 공정 모니터링 시스템',
     };
   }
   
