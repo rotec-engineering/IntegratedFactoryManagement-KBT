@@ -4,12 +4,16 @@ import Login from './Login';
 import Main from './Main';
 
 
-export function Logincheck() {
+export function Logincheck({ checkingInRoot }) {
   const [isLogined, setIsLogined] = useState(false);
+  const [ name, setName ] = useState('');
 
-  const checking = (bool) => {
+  const checking = (bool, customer) => {
     setIsLogined(bool);
+    setName(customer);
   }
+
+  checkingInRoot(isLogined, name);
 
   return (
     <div>

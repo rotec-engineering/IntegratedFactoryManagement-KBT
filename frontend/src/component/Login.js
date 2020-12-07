@@ -26,21 +26,23 @@ function Login({ checking }) {
   const onClickLoginButton = () => {
     // 로그인 성공 여부를 위한 flag
     let flag = false;
+    let customer;
 
     // 배열로 넘어온 데이터에 대하여 하나씩 비교
     user.forEach(function(element) {
       if(input.id === element.id && input.password === element.password) {
         flag = true;
+        customer = element.name;
       }
     });
 
     // flag 값에 따른 동작
     if(flag) {
       alert("로그인 성공!");
-      checking(true);
+      checking(true, customer);
     } else {
       alert("로그인 실패!");
-      checking(false);
+      checking(false, '');
     }
   };
 
