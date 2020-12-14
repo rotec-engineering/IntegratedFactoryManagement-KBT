@@ -8,7 +8,6 @@ export function Logincheck({ checkingInRoot, isLogin }) {
   return (
     <div className="content">
       {isLogin ? <Main/> : <Login checkingInRoot={checkingInRoot}/>}
-      <button onClick={()=> checkingInRoot(false,'')}>Click me</button>
     </div>
   )
 }
