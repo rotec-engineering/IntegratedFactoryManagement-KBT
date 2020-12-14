@@ -1,24 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Login from './Login';
 import Main from './Main';
 
 
-export function Logincheck({ checkingInRoot }) {
-  const [isLogined, setIsLogined] = useState(false);
-  const [ name, setName ] = useState('');
-
-  const checking = (bool, customer) => {
-    setIsLogined(bool);
-    setName(customer);
-  }
-
-  checkingInRoot(isLogined, name);
-
+export function Logincheck({ checkingInRoot, isLogin }) {  
   return (
-    <div>
-      {isLogined ? <Main/> : <Login checking={checking}/>}
-      <button onClick={()=> setIsLogined(!isLogined)}>Click me</button>
+    <div className="content">
+      {isLogin ? <Main/> : <Login checkingInRoot={checkingInRoot}/>}
+      <button onClick={()=> checkingInRoot(false,'')}>Click me</button>
     </div>
   )
 }

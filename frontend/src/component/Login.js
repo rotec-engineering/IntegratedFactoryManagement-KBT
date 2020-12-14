@@ -3,7 +3,7 @@ import { Container, Col, Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Login.css'
 
-function Login({ checking }) {
+function Login({ checkingInRoot }) {
   const [ user, setUser ] = useState([
     {
     id: 'rotec',
@@ -26,7 +26,7 @@ function Login({ checking }) {
   const onClickLoginButton = () => {
     // 로그인 성공 여부를 위한 flag
     let flag = false;
-    let customer;
+    let customer = '';
 
     // 배열로 넘어온 데이터에 대하여 하나씩 비교
     user.forEach(function(element) {
@@ -39,10 +39,17 @@ function Login({ checking }) {
     // flag 값에 따른 동작
     if(flag) {
       alert("로그인 성공!");
-      checking(true, customer);
+      checkingInRoot(true, customer);
     } else {
       alert("로그인 실패!");
-      checking(false, '');
+      checkingInRoot(false, '');
+    }
+  };
+
+  // 엔터키 눌렀을 시 동작
+  const onKeyPress = (e) => {
+    if(e.key === 'Enter') {
+      onClickLoginButton();
     }
   };
 
@@ -59,15 +66,15 @@ function Login({ checking }) {
     <Container className="login">
         <Col>
           아이디 : &nbsp;
-            <input name="id" type="text" onChange={handleChange}></input>
+            <input name="id" type="text" onChange={handleChange} onKeyPress={onKeyPress}></input>
         </Col>
         <br/>
         <Col>
           비밀번호 : &nbsp;
-            <input name="password" type="password" onChange={handleChange}></input>
+            <input name="password" type="password" onChange={handleChange} onKeyPress={onKeyPress}></input>
         </Col>
         <br/>
-        <Col><Button className="btn btn-lg login" color="secondary" onClick={onClickLoginButton}>로그인</Button></Col>
+        <Col><Button className="btn btn-lg loginBtn" color="secondary" onClick={onClickLoginButton}>로그인</Button></Col>
     </Container>
   )
 }
