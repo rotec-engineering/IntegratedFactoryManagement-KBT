@@ -52,16 +52,20 @@ h2 {
   height: 100%;
 }
 
+.overNlocation {
+  height: 550px;
+}
+
 .overallDiv {
   border: 2px solid;
   border-radius: 2em;
-  height: 50%;
+  height: 48%;
 }
 
 .locationDiv {
   border: 2px solid;
   border-radius: 2em;
-  height: 47%;
+  height: 49%;
 }
 
 .oneTable {

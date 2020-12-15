@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../../CSS/SBDdetail.css'
 
-export default function Sbddetail() {
+export default function Sbddetail({ clickCloseBtn }) {
   const [ data, setData ] = useState([
     {
       deviceId: 'UEAM_01',
@@ -26,6 +26,10 @@ export default function Sbddetail() {
     </tr>
   );
 
+  const onClickClose = () => {
+    clickCloseBtn();
+  }
+
   return (
     <div className="detailDiv">
       <img src="./images/graph.png" alt="ROTEC" width="480px" height="200px" className="detailImage"/>
@@ -43,6 +47,7 @@ export default function Sbddetail() {
             {list}
         </tbody>
       </table>
+      <img src={`./images/close.png`} width="510px" height="16" alt="ROTEC" onClick={onClickClose}/>
     </div>
   )
 }

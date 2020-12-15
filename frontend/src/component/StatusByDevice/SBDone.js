@@ -13,7 +13,7 @@ export default function Sbdone() {
   
   return (
     <div>
-      <table border="1" className="oneTable">
+      <table border="1" className="oneTable" onClick={()=> alert("클릭됨!")}>
         <thead>
           <tr>
             <th>{deviceInfo.deviceId+"("+deviceInfo.deviceType+")"}</th>

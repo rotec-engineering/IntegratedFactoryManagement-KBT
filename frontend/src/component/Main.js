@@ -15,7 +15,7 @@ function Main() {
       <br/>
       <Row md="4">
         <Col><Enterance/></Col>
-        <Col><OverallStatus/><br/><LocationDetail/></Col>
+        <Col><div className="overNlocation"><OverallStatus/><br/><LocationDetail/></div></Col>
         <Col md={{size:6}}><SBDmain/></Col>
       </Row>
       <br/>
