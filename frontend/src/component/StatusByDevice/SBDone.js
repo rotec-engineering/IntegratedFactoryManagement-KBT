@@ -1,22 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export default function Sbdone() {
-  const [ deviceInfo, setdeviceInfo ] = useState({
-    deviceId: 'UEAM100_1',
-    deviceType: '가스',
-    status1: '',
-    status2: '',
-    status3: '',
-    status4: '',
-    status5: '',
-  });
-  
+export default function Sbdone({ onClickOne, deviceId }) {  
   return (
     <div>
-      <table border="1" className="oneTable" onClick={()=> alert("클릭됨!")}>
+      <table border="1" className="oneTable" onClick={() => onClickOne(deviceId)}>
         <thead>
           <tr>
-            <th>{deviceInfo.deviceId+"("+deviceInfo.deviceType+")"}</th>
+            <th>{deviceId+"(가스)"}</th>
           </tr>
         </thead>
         <tbody>
