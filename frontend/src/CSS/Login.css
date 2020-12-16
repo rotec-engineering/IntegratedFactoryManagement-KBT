@@ -1,5 +1,8 @@
 .login {
   text-align: center;
-  padding-top: 12%;
   font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

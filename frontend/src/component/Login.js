@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Col, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Login.css'
 
@@ -63,19 +63,19 @@ function Login({ checkingInRoot }) {
   };
 
   return (
-    <Container className="login">
-        <Col>
+    <div className="login">
+        <div>
           아이디 : &nbsp;
             <input name="id" type="text" onChange={handleChange} onKeyPress={onKeyPress}></input>
-        </Col>
+        </div>
         <br/>
-        <Col>
+        <div>
           비밀번호 : &nbsp;
             <input name="password" type="password" onChange={handleChange} onKeyPress={onKeyPress}></input>
-        </Col>
+        </div>
         <br/>
-        <Col><Button className="btn btn-lg loginBtn" color="secondary" onClick={onClickLoginButton}>로그인</Button></Col>
-    </Container>
+        <div><Button className="btn btn-lg loginBtn" color="secondary" onClick={onClickLoginButton}>로그인</Button></div>
+    </div>
   )
 }
 
