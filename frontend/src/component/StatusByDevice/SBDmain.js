@@ -33,15 +33,22 @@ export default function Sbdmain() {
       <h2>탐지기별 현황</h2>
       <hr/>
       <Container className="SBDDiv">
-        <Row md="2">
-          <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[0]}/></Col>
-          <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[1]}/></Col>
-        </Row>
-        <br/>
-        <Row md="2">
-          <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[2]}/></Col>
-          <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[3]}/></Col>
-        </Row>
+        <div className="SBDlist">
+          <Row md="2">
+            <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[0]}/></Col>
+            <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[1]}/></Col>
+          </Row>
+          <br/>
+          <Row md="2">
+            <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[2]}/></Col>
+            <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[3]}/></Col>
+          </Row>
+          <br/>
+          <Row md="2">
+            <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[2]}/></Col>
+            <Col><SBDone onClickOne={onClickOne} deviceId={deviceIdArr[3]}/></Col>
+          </Row>
+        </div>
         <hr/>
         {onceClicked ? 
           !show && <img src={`./images/open.png`} width="510px" height="16" alt="ROTEC" onClick={() => setshow(!show)}/> :

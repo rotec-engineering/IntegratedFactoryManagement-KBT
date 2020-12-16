@@ -11,11 +11,11 @@ export default function Sbdone({ onClickOne, deviceId }) {
         </thead>
         <tbody>
           <tr>
-            <img src='./images/normal.png' alt="ROTEC" height="40px" width="40px" className="detailStatusImage"/>
-            <img src="./images/normal.png" alt="ROTEC" height="40px" width="40px" className="detailStatusImage"/>
-            <img src="./images/normal.png" alt="ROTEC" height="40px" width="40px" className="detailStatusImage"/>
-            <img src="./images/normal.png" alt="ROTEC" height="40px" width="40px" className="detailStatusImage"/>
-            <img src="./images/normal.png" alt="ROTEC" height="40px" width="40px" className="detailStatusImage"/>
+            <img src='./images/normal.png' alt="ROTEC" height="35px" width="35px" className="detailStatusImage"/>
+            <img src="./images/normal.png" alt="ROTEC" height="35px" width="35px" className="detailStatusImage"/>
+            <img src="./images/normal.png" alt="ROTEC" height="35px" width="35px" className="detailStatusImage"/>
+            <img src="./images/normal.png" alt="ROTEC" height="35px" width="35px" className="detailStatusImage"/>
+            <img src="./images/normal.png" alt="ROTEC" height="35px" width="35px" className="detailStatusImage"/>
           </tr>
         </tbody>
       </table>
