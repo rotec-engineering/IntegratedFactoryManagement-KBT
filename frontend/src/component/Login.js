@@ -55,10 +55,13 @@ function Login({ checkingInRoot }) {
 
   // input 값이 변경되면 발동하는 함수
   const handleChange = (e) => {
-    const {value, name} = e.target;
-    setInput({
-      ...input,
-      [name]: value,
+    setInput((input) => {
+      return(
+        {
+          ...input,
+          [e.name]: e.value,
+        }
+      )
     });
   };
 
@@ -66,12 +69,12 @@ function Login({ checkingInRoot }) {
     <div className="login">
         <div>
           아이디 : &nbsp;
-            <input name="id" type="text" onChange={handleChange} onKeyPress={onKeyPress}></input>
+            <input name="id" type="text" onChange={({ target: value }) => {handleChange(value)}} onKeyPress={onKeyPress}></input>
         </div>
         <br/>
         <div>
           비밀번호 : &nbsp;
-            <input name="password" type="password" onChange={handleChange} onKeyPress={onKeyPress}></input>
+            <input name="password" type="password" onChange={({ target: value }) => {handleChange(value)}} onKeyPress={onKeyPress}></input>
         </div>
         <br/>
         <div><Button className="btn btn-lg loginBtn" color="secondary" onClick={onClickLoginButton}>로그인</Button></div>

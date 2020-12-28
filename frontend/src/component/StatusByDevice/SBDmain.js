@@ -82,7 +82,7 @@ export default function Sbdmain() {
         </div>
         <hr/>
         {onceClicked ? 
-          !show && <img src={`./images/open.png`} width="510px" height="16px" alt="ROTEC" onClick={clickOpenBtn}/> :
+          !show && <img src={`./images/close.png`} width="510px" height="16px" alt="ROTEC" onClick={clickOpenBtn}/> :
           "상세 정보를 확인하려면 탐지기를 선택해주세요"          
         }
         <Row>

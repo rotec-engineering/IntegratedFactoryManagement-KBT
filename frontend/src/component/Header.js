@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Header.css'
 
 function Header({ isLogin, name, checkingInRoot }) {
+  // 로고와 로그아웃 버튼
   const logoutButton = (<Button className="logoutBtn" onClick={() => {checkingInRoot(false, '')}}>로그아웃</Button>);
   const logoImg = (<img src={`./images/${name}.png`} alt="ROTEC"/>)
 

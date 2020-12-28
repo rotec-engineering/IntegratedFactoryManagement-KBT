@@ -28,6 +28,7 @@ export default function Sbddetail({ clickCloseBtn, clickedDeviceId }) {
   
   return (
     <div className="detailDiv">
+      <img src={`./images/open.png`} width="510px" height="16" alt="ROTEC" onClick={clickCloseBtn}/>
       <img src="./images/graph.png" alt="ROTEC" width="480px" height="200px" className="detailImage"/>
       <hr/>
       <table border="1" className="detailTable">
@@ -43,7 +44,6 @@ export default function Sbddetail({ clickCloseBtn, clickedDeviceId }) {
             {list}
         </tbody>
       </table>
-      <img src={`./images/close.png`} width="510px" height="16" alt="ROTEC" onClick={clickCloseBtn}/>
     </div>
   )
 }
